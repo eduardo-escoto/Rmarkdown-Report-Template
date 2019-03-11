@@ -1,0 +1,41 @@
+---
+header-includes:
+- \usepackage{booktabs}
+- \usepackage{makecell}
+title: 'Class Number: Class Name: Assignment Name'
+author: 'Professor: Professor Name | TA: TA Name'
+date: "Date"
+subtitle: 'Name: Eduardo Escoto | Perm #: 7611817 | email: e_escoto@ucsb.edu'
+output:
+  pdf_document:
+    fig_caption: yes
+  html_document:
+    df_print: paged
+    fig_caption: yes
+  rmarkdown::github_document:
+figsintext: yes
+knit: (function(output_file, encoding){rmarkdown::render(output_file, output_format = "pdf_document",output_dir = "PDF_Output")})
+---
+
+``` {r setup, echo=FALSE, message=FALSE, warning = FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  comment = NA,
+  out.width = "\\textwidth", 
+  fig.pos = "!h"
+)
+options(knitr.kable.NA = '')
+```
+
+```{r global.loading_libraries}
+library(tidyverse)
+library(GGally)
+library(alr4)
+library(pander)
+library(knitr)
+library(kableExtra)
+```
+
+# HERE IS YOUR FILE MUAHAHAHHA
